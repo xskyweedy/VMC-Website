@@ -6,8 +6,11 @@
     body {
       background-color: #222;
       font-family: Arial, sans-serif;
-      text-align: center;
-      padding-top: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
       color: #fff;
     }
     
@@ -23,14 +26,8 @@
       margin-bottom: 40px;
     }
     
-    a {
-      color: #007bff;
-      text-decoration: none;
-    }
-    
     .container {
       max-width: 400px;
-      margin: 0 auto;
       padding: 40px;
       background-color: #333;
       background-image: url('texture.png');
@@ -43,6 +40,20 @@
     
     .home-button {
       margin-top: 20px;
+    }
+    
+    .home-button a {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+    
+    .home-button a:hover {
+      background-color: #0056b3;
     }
     
     @keyframes scale-in {
